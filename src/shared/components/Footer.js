@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { CONSTAINT } from "../services/CONSTAINT.service";
 
 export const Footer = () => {
     return (
@@ -13,12 +15,12 @@ export const Footer = () => {
 
       <div className="box">
           <h3>quick links</h3>
-          <a href="#home"><i className="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i className="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i className="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i className="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i className="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#experience"><i className="fas fa-chevron-circle-right"></i> experience</a>
+          <Link to={CONSTAINT.navigateToHome}><i className="fas fa-chevron-circle-right"></i> home</Link>
+          <Link to={CONSTAINT.navigateToAbout}><i className="fas fa-chevron-circle-right"></i> about</Link>
+          <Link to={CONSTAINT.navigateToSkills}><i className="fas fa-chevron-circle-right"></i> skills</Link>
+          <Link to={CONSTAINT.navigateToEducation}><i className="fas fa-chevron-circle-right"></i> education</Link>
+          <Link to={CONSTAINT.navigateToWork}><i className="fas fa-chevron-circle-right"></i> work</Link>
+          <Link to={CONSTAINT.navigateToExperience}><i className="fas fa-chevron-circle-right"></i> experience</Link>
       </div>
 
       <div className="box">
