@@ -11,7 +11,7 @@ export const Work = () => {
 {
   PERSON.projects.slice(0, 2).map((pro) => {
     return (
-    <div className="box-container">
+    <div className="box-container" key={pro.name}>
       <div className="box tilt">
         <img draggable="false" src={pro.image} alt="" />
         <div className="content">
