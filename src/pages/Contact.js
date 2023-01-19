@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import emailjs from '@emailjs/browser';
+// components
 import { Footer } from "../shared/components/Footer";
+// images
 import contactImg from '../assets/images/contact1.png';
+// variables
+import { CONSTAINT } from "../shared/services/CONSTAINT.service";
+import { ENV } from "../environment/enviromentt";
 
 export const Contact = () => {
+  const form = useRef();
+  const navigate = useNavigate()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(ENV.SERVICE_ID, ENV.TEMPLATE_ID, form.current, ENV.PUBLIC_KEY)
+      .then(() => {
+          navigate(CONSTAINT.navigateToHome)
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
     return (
         <div>
 
@@ -15,7 +35,7 @@ export const Contact = () => {
       <div className="image-box">
         <img draggable="false" src={contactImg} alt="" />
       </div>
-    <form id="contact-form">
+    <form id="contact-form" ref={form} onSubmit={sendEmail}>
       
       <div className="form-group">
         <div className="field">
@@ -27,7 +47,7 @@ export const Contact = () => {
           <i className='fas fa-envelope'></i>
         </div>
         <div className="field">
-          <input type="text" name="phone" placeholder="Phone" />
+          <input type="text" name="number" placeholder="Phone" />
           <i className='fas fa-phone-alt'></i>
         </div>
         <div className="message">
