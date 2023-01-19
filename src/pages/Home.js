@@ -10,7 +10,7 @@ export const Home = () => {
     // { icon: "fab fa-twitter", class: "twitter", label: "Twitter", url: "" },
     // { icon: "fab fa-telegram-plane", class: "telegram", label: "Telegram", url: ""},
     { icon: "fab fa-instagram", class: "instagram", label: "Instagram", url: `${PERSON.social_url.insta}` },
-    // { icon: "fab fa-dev", class: "dev", label: "Dev", url: "" },
+    { icon: "fab fa-facebook", class: "dev", label: "Dev", url: `${PERSON.social_url.facebook}` },
   ];
 
   return (

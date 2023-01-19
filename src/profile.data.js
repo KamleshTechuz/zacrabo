@@ -19,6 +19,7 @@ export const PERSON = {
     linkedIn: 'https://www.linkedin.com/in/kamlesh-mundel-88b7401a1/',
     gitHub: 'https://github.com/KamleshTechuz/',
     insta: 'https://www.instagram.com/kamlesh_9162/',
+    facebook: 'https://www.facebook.com/kamlesh.mundel.79/',
   },
   education: {
     college: {
