@@ -5,12 +5,12 @@ import { PERSON } from "../profile.data";
 
 export const Home = () => {
   const socialData = [
-    { icon: "fab fa-linkedin", class: "linkedin", label: "LinkedIn", url: "" },
-    { icon: "fab fa-github", class: "github", label: "GitHub", url: "" },
-    { icon: "fab fa-twitter", class: "twitter", label: "Twitter", url: "" },
-    { icon: "fab fa-telegram-plane", class: "telegram", label: "Telegram", url: ""},
-    { icon: "fab fa-instagram", class: "instagram", label: "Instagram", url: "" },
-    { icon: "fab fa-dev", class: "dev", label: "Dev", url: "" },
+    { icon: "fab fa-linkedin", class: "linkedin", label: "LinkedIn", url: `${PERSON.social_url.linkedIn}` },
+    { icon: "fab fa-github", class: "github", label: "GitHub", url: `${PERSON.social_url.gitHub}` },
+    // { icon: "fab fa-twitter", class: "twitter", label: "Twitter", url: "" },
+    // { icon: "fab fa-telegram-plane", class: "telegram", label: "Telegram", url: ""},
+    { icon: "fab fa-instagram", class: "instagram", label: "Instagram", url: `${PERSON.social_url.insta}` },
+    // { icon: "fab fa-dev", class: "dev", label: "Dev", url: "" },
   ];
 
   return (
