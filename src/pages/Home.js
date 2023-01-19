@@ -7,6 +7,7 @@ export const Home = () => {
   const socialData = [
     { icon: "fab fa-linkedin", class: "linkedin", label: "LinkedIn", url: `${PERSON.social_url.linkedIn}` },
     { icon: "fab fa-github", class: "github", label: "GitHub", url: `${PERSON.social_url.gitHub}` },
+    { icon: "fas fa-envelope", class: "", label: "", url: `mailto:${PERSON.email}` },
     // { icon: "fab fa-twitter", class: "twitter", label: "Twitter", url: "" },
     // { icon: "fab fa-telegram-plane", class: "telegram", label: "Telegram", url: ""},
     { icon: "fab fa-instagram", class: "instagram", label: "Instagram", url: `${PERSON.social_url.insta}` },
