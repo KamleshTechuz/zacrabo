@@ -40,7 +40,7 @@ export const Navbar = () => {
           {navData.map((data) => {
             return (
               <li key={data.id}>
-                <NavLink to={data.url}>{data.name}</NavLink>
+                <NavLink to={data.url} onClick={toggleClass}>{data.name}</NavLink>
               </li>
             );
           })}
