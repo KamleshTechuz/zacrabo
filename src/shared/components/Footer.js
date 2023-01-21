@@ -1,6 +1,18 @@
 import React from "react";
+import { PERSON } from "../../profile.data";
 
 export const Footer = () => {
+
+    const socialData = [
+        { icon: "fab fa-linkedin", class: "linkedin", label: "LinkedIn", url: `${PERSON.social_url.linkedIn}` },
+        { icon: "fab fa-github", class: "github", label: "GitHub", url: `${PERSON.social_url.gitHub}` },
+        { icon: "fas fa-envelope", class: "", label: "", url: `mailto:${PERSON.email}` },
+        // { icon: "fab fa-twitter", class: "twitter", label: "Twitter", url: "" },
+        // { icon: "fab fa-telegram-plane", class: "telegram", label: "Telegram", url: ""},
+        { icon: "fab fa-instagram", class: "instagram", label: "Instagram", url: `${PERSON.social_url.insta}` },
+        { icon: "fab fa-facebook", class: "dev", label: "Dev", url: `${PERSON.social_url.facebook}` },
+      ];
+
     return (
         <section className="footer">
 
@@ -27,12 +39,11 @@ export const Footer = () => {
           <p> <i className="fas fa-envelope"></i>kamlesh@techuz.com</p>
           <p> <i className="fas fa-map-marked-alt"></i>Gujarat, India-380060</p>
           <div className="share">
-
-              <a href="https://www.linkedin.com/in/jigar-sable" className="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/jigar-sable" className="fab fa-github" aria-label="GitHub" target="_blank"></a>
-              <a href="mailto:jigarsable21@gmail.com" className="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-              <a href="https://twitter.com/jigar_sable" className="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
-              <a href="https://t.me/lifecode5" className="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+        {
+            socialData.map((data) => {
+                return <a href={data.url} className={data.icon} aria-label={data.label} target="_blank"></a>
+            })
+        }
           </div>
       </div>
   </div>
