@@ -37,7 +37,9 @@ export const PERSON = {
       status: "Completed",
     },
   },
-  about: 'I am a Full-Stack developer based in Gujarat, India. I am undergraduate from Jodhpur Institute Of Engineering & Technology. I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using MERN Stack. Working for myself to improve my skills. Love to build Full-Stack clones.',
+  about: `I am a Full-Stack developer based in Ahmedabad, India. I am undergraduate from Jodhpur Institute Of Engineering & Technology.
+  Currently working at Techuz Infoweb PVT LTD. I am very passionate about improving my coding skills & developing applications & websites.
+  I build WebApps and Websites using MERN & MARN Stack. Love to build Full-Stack EdTech, portfolios, E-commerce websites and clones.`,
   current_role: 'Full Stack Developer',
   skills: [
     {
