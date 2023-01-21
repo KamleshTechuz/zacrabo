@@ -9,7 +9,7 @@ export const PERSON = {
   last_name: "Mundel",
   age: 23,
   number: "+91 779-099-7718",
-  email: "kamlesh@techuz.com",
+  email: "kamleshmundel18@gmail.com",
   current_place: {
     city: 'Ahmedabad',
     country: 'India',
