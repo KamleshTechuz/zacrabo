@@ -1,19 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { PERSON } from "../../profile.data";
-import { CONSTAINT } from "../services/CONSTAINT.service";
 
 export const Footer = () => {
-
-    const socialData = [
-        { icon: "fab fa-linkedin", url: `${PERSON.social_url.linkedIn}` },
-        { icon: "fab fa-github", url: `${PERSON.social_url.gitHub}` },
-        { icon: "fas fa-envelope", url: `mailto:${PERSON.email}` },
-        // { icon: "fab fa-twitter", class: "twitter", label: "Twitter", url: "" },
-        // { icon: "fab fa-telegram-plane", class: "telegram", label: "Telegram", url: ""},
-        { icon: "fab fa-instagram", url: `${PERSON.social_url.insta}` },
-        { icon: "fab fa-facebook", url: `${PERSON.social_url.facebook}` },
-      ];
     return (
         <section className="footer">
 
@@ -26,12 +13,12 @@ export const Footer = () => {
 
       <div className="box">
           <h3>quick links</h3>
-          <Link to={CONSTAINT.navigateToHome}><i className="fas fa-chevron-circle-right"></i> home</Link>
-          <Link to={CONSTAINT.navigateToAbout}><i className="fas fa-chevron-circle-right"></i> about</Link>
-          <Link to={CONSTAINT.navigateToSkills}><i className="fas fa-chevron-circle-right"></i> skills</Link>
-          <Link to={CONSTAINT.navigateToEducation}><i className="fas fa-chevron-circle-right"></i> education</Link>
-          <Link to={CONSTAINT.navigateToWork}><i className="fas fa-chevron-circle-right"></i> work</Link>
-          <Link to={CONSTAINT.navigateToExperience}><i className="fas fa-chevron-circle-right"></i> experience</Link>
+          <a href="#home"><i className="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i className="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i className="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i className="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work"><i className="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience"><i className="fas fa-chevron-circle-right"></i> experience</a>
       </div>
 
       <div className="box">
@@ -41,12 +28,11 @@ export const Footer = () => {
           <p> <i className="fas fa-map-marked-alt"></i>Gujarat, India-380060</p>
           <div className="share">
 
-            {
-                socialData.map((data) => {
-                    return <a href={data.url} className={data.icon} target="_blank" key={data.icon}></a>
-                })
-            }
-
+              <a href="https://www.linkedin.com/in/jigar-sable" className="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/jigar-sable" className="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:jigarsable21@gmail.com" className="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://twitter.com/jigar_sable" className="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="https://t.me/lifecode5" className="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
           </div>
       </div>
   </div>
