@@ -1,13 +1,13 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import { ContentLayout } from "./layouts/Content.layout";
+// import { ContentLayout } from "./layouts/Content.layout";
 import { FullLayout } from "./layouts/Full.layout";
-import { AuthGuard }  from "./shared/guards/AuthGuard";
-import { CONTENT_ROUTES } from "./shared/routes/content.routing";
+// import { AuthGuard }  from "./shared/guards/AuthGuard";
+// import { CONTENT_ROUTES } from "./shared/routes/content.routing";
 
 // Guards
 import { FULL_ROUTES } from "./shared/routes/Full.routing";
-import { PageGuard } from "./shared/guards/PageGuard";
+// import { PageGuard } from "./shared/guards/PageGuard";
 
 export const App = () => {
   const element = useRoutes([
