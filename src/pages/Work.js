@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PERSON } from "../profile.data";
+import portfolioImg from "../assets/images/projects/portfolio1.PNG"
 
 export const Work = () => {
     return (
@@ -8,30 +8,25 @@ export const Work = () => {
 
   <h2 className="heading"><i className="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
 
-{
-  PERSON.projects.slice(0, 2).map((pro) => {
-    return (
-    <div className="box-container" key={pro.name}>
-      <div className="box tilt">
-        <img draggable="false" src={pro.image} alt="" />
-        <div className="content">
-          <div className="tag">
-          <h3>{pro.name}</h3>
-          </div>
-          <div className="desc">
-            <p>{pro.desc}</p>
-            <div className="btns">
-              <a href={pro.links.view} className="btn" target="_blank"><i className="fas fa-eye"></i> View</a>
-              <a href={pro.links.code} className="btn" target="_blank">Code <i className="fas fa-code"></i></a>
-            </div>
+  <div className="box-container">
+
+    <div className="box tilt">
+      <img draggable="false" src={portfolioImg} alt="" />
+      <div className="content">
+        <div className="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div className="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div className="btns">
+            <a href="#" className="btn" target="_blank"><i className="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/Portfolio-Website" className="btn" target="_blank">Code <i className="fas fa-code"></i></a>
           </div>
         </div>
       </div>
     </div>
-    )
-  })
-}
 
+</div>
 
 <div className="viewall">
   <Link to="/projects" className="btn"><span>View All</span>

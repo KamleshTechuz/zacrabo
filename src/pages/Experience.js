@@ -20,11 +20,11 @@ export const Experience = () => {
             <div className={`container ${ (i%2) ? 'left' : 'right'}`} key={i}>
               <div className="content">
                 <div className="tag">
-                  <h2>{PERSON.experience[i].company_name}</h2>
+                  <h2>Self Employed</h2>
                 </div>
                 <div className="desc">
-                  <h3>{PERSON.experience[i].role}</h3>
-                  <p>{PERSON.experience[i].join_from} - {PERSON.experience[i].till}</p>
+                  <h3>Full Stack Developer</h3>
+                  <p>Oct 2021 - present</p>
                 </div>
               </div>
             </div>

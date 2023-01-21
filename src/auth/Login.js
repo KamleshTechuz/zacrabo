@@ -12,8 +12,14 @@ export const Login = () => {
     const initUserData = {email: '', pass: ''};
     const [userData, setUserData] = useState(initUserData)
 
-    const handleChange = ({ target: { value, name } }) => {
-        setUserData(pre => ({ ...pre, [name]: value }))
+    const handleEmailChange = (e) => {
+        setUserData(pre => ({...pre, email: e.target.value}))
+        
+    }
+    
+    const handlePassChange = (e) => {
+        setUserData(pre => ({...pre, pass: e.target.value}))
+        
     }
 
     const handleSubmit = (event) => {
@@ -36,7 +42,7 @@ export const Login = () => {
               </span>
 
               <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                  <input className="input100" type="text" name="email" value={userData.email} onChange={handleChange} placeholder="Email" />
+                  <input className="input100" type="text" name="email" value={userData.email} onChange={handleEmailChange} placeholder="Email" />
                   <span className="focus-input100"></span>
                   <span className="symbol-input100">
                       <i className="fa fa-envelope" aria-hidden="true"></i>
@@ -44,7 +50,7 @@ export const Login = () => {
               </div>
 
               <div className="wrap-input100 validate-input" data-validate="Password is required">
-                  <input className="input100" type="password" name="pass" value={userData.pass} onChange={handleChange} placeholder="Password" />
+                  <input className="input100" type="password" name="pass" value={userData.pass} onChange={handlePassChange} placeholder="Password" />
                   <span className="focus-input100"></span>
                   <span className="symbol-input100">
                       <i className="fa fa-lock" aria-hidden="true"></i>

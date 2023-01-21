@@ -1,6 +1,6 @@
 import React from "react";
-import collegeImg from '../assets/images/educat/college1.png';
-import schoolImg from '../assets/images/educat/school1.jpeg';
+import collegeImg from '../assets/images/educat/college.jpg';
+import schoolImg from '../assets/images/educat/school.jpg';
 import { PERSON } from "../profile.data";
 
 export const Education = () => {
@@ -18,7 +18,7 @@ export const Education = () => {
       <div className="box-container">
         <div className="box">
           <div className="image">
-            <img style={{minWidth: '100px'}}
+            <img
               draggable="false"
               src={collegeImg}
               alt=""
