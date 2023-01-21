@@ -1,3 +1,9 @@
+// images for projects
+import tutorac from './assets/images/projects/tutorac.png'
+import getlitt from './assets/images/projects/getlitt.png'
+import employee from './assets/images/projects/employee.png'
+import portfolio from './assets/images/projects/portfolio1.PNG'
+
 export const PERSON = {
   first_name: "Kamlesh",
   last_name: "Mundel",
@@ -8,6 +14,12 @@ export const PERSON = {
     city: 'Ahmedabad',
     country: 'India',
     pincode: '380060'
+  },
+  social_url: {
+    linkedIn: 'https://www.linkedin.com/in/kamlesh-mundel-88b7401a1/',
+    gitHub: 'https://github.com/KamleshTechuz/',
+    insta: 'https://www.instagram.com/kamlesh_9162/',
+    facebook: 'https://www.facebook.com/kamlesh.mundel.79/',
   },
   education: {
     college: {
@@ -25,7 +37,9 @@ export const PERSON = {
       status: "Completed",
     },
   },
-  about: 'I am a Full-Stack developer based in Gujarat, India. I am undergraduate from Jodhpur Institute Of Engineering & Technology. I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using MERN Stack. Working for myself to improve my skills. Love to build Full-Stack clones.',
+  about: `I am a Full-Stack developer based in Ahmedabad, India. I am undergraduate from Jodhpur Institute Of Engineering & Technology.
+  Currently working at Techuz Infoweb PVT LTD. I am very passionate about improving my coding skills & developing applications & websites.
+  I build WebApps and Websites using MERN & MARN Stack. Love to build Full-Stack EdTech, portfolios, E-commerce websites and clones.`,
   current_role: 'Full Stack Developer',
   skills: [
     {
@@ -87,6 +101,59 @@ export const PERSON = {
         join_from: 'January 2022',
         till: 'June 2022'
     }
+  ],
+  projects: [
+    {
+      name: "Tutorac",
+      desc: `Tutorac is an online learning platform providing video courses and live entrance exam practice tests for
+      classes 11 and 12. It offers cinematic video courses aided by 3D visuals to help students learn better. We
+      designed and developed the entire platform from the ground up. Key features of the platform include
+      rendering 4k video lessons, integrated quizzes and resources, live exam prep tests, and a student-teacher
+      doubt clarification module.`,
+      image: tutorac,
+      category: 1, // MEAN
+      links: {
+        view: "https://tutorac.com/",
+        code: ""
+      }
+    },
+    {
+      name: "Portfolio web site",
+      desc: "Modern resume pattern using react | content about person like education, skills, experience and etc.",
+      image: portfolio,
+      category: 2, // MERN
+      links: {
+        view: "https://kamlesh-mundel.netlify.com/",
+        code: "https://github.com/KamleshTechuz/zacrabo"
+      }
+    },
+    {
+      name: "Getlitt!",
+      desc: `GetLitt! is a gamified book reading and e-learning platform aimed to develop reading habits among
+      children. It has a massive digital library of books across different genres like adventure, wildlife, science,
+      biographies, fantasy, environment, humor, fairy tales, mystery and non-fiction. The entire platform is
+      gamified with game mechanics and dynamics to make learning an enjoyable experience. It also organizes
+      national and international-level reading olympiad for kids. Recently, it was also selected for a startup
+      accelerator funding program.`,
+      image: getlitt,
+      category: 1, // MEAN
+      links: {
+        view: "http://www.getlitt.co/",
+        code: ""
+      }
+    },
+    {
+      name: "Employee recognition",
+      desc: `Employee recognition is an platform to maintain employees data like working hours, leaves, efficiency,
+      activity, performance and declares the best performer of the month, employee of the month, emerging
+      employee of the month and best leader.`,
+      image: employee,
+      category: 1, // MARN
+      links: {
+        view: "",
+        code: ""
+      }
+    },
   ]
   
 };

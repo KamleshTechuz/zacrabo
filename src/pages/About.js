@@ -1,6 +1,7 @@
 import React from "react";
 import profileImg from '../assets/images/profile3.jpg'
 import { PERSON } from "../profile.data";
+import resume from '../assets/files/resume.pdf';
 
 export const About = () => {
     return (
@@ -30,7 +31,7 @@ export const About = () => {
         </div>
         
         <div className="resumebtn">
-            <a href="#" className="btn"><span>Resume</span>
+            <a href={resume} className="btn"><span>Resume</span>
                 <i className="fas fa-chevron-right"></i>
             </a>
         </div>
