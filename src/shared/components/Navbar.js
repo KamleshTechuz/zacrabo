@@ -26,9 +26,9 @@ export const Navbar = () => {
 
   return (
     <header>
-      <a href="/" className="logo">
+      <NavLink to="/" className="logo">
         <i className="fab fa-node-js"></i> Kamlesh Mundel
-      </a>
+      </NavLink>
 
       <div
         id="menu"
