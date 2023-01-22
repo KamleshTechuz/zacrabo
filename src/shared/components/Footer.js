@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { PERSON } from "../../profile.data";
 
 export const Footer = () => {
@@ -25,12 +26,12 @@ export const Footer = () => {
 
       <div className="box">
           <h3>quick links</h3>
-          <a href="#home"><i className="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i className="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i className="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i className="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i className="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#experience"><i className="fas fa-chevron-circle-right"></i> experience</a>
+          <Link to="/home"><i className="fas fa-chevron-circle-right"></i> home</Link>
+          <Link to="/about"><i className="fas fa-chevron-circle-right"></i> about</Link>
+          <Link to="/skills"><i className="fas fa-chevron-circle-right"></i> skills</Link>
+          <Link to="/education"><i className="fas fa-chevron-circle-right"></i> education</Link>
+          <Link to="/work"><i className="fas fa-chevron-circle-right"></i> work</Link>
+          <Link to="/experience"><i className="fas fa-chevron-circle-right"></i> experience</Link>
       </div>
 
       <div className="box">
