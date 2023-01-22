@@ -30,21 +30,22 @@ export const Education = () => {
             <h4>{PERSON.education.college.year} | {PERSON.education.college.status}</h4>
           </div>
         </div>
-
-        <div className="box">
-          <div className="image">
-            <img
-              draggable="false"
-              src={schoolImg}
-              alt=""
-            />
-          </div>
-          <div className="content">
-            <h3>{PERSON.education.school.degree} | {PERSON.education.school.field}</h3>
-            <p>{PERSON.education.school.name} | RBSE</p>
-            <h4>{PERSON.education.school.year} | {PERSON.education.school.status}</h4>
-          </div>
-        </div>
+          {
+            PERSON.education.school.map((sch) => {
+              return (
+                <div className="box">
+                  <div className="image">
+                    <img draggable="false" src={schoolImg} alt=""/>
+                  </div>
+                  <div className="content">
+                    <h3>{sch.degree} | {sch.field}</h3>
+                    <p>{sch.name} | RBSE</p>
+                    <h4>{sch.year} | {sch.status}</h4>
+                  </div>
+                </div>
+              )
+            })
+          }
       </div>
     </section>
   );
