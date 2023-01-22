@@ -29,13 +29,20 @@ export const PERSON = {
       year: "2018-2022",
       status: "Completed",
     },
-    school: {
+    school: [
+      {
       name: "Shree Vageeshwaree Vidhya Mandir",
       degree: "12th",
       field: "Physics, Chemistry & Maths",
       year: "2016-2017",
       status: "Completed",
-    },
+    }, {
+      name: "Shree Vageeshwaree Vidhya Mandir",
+      degree: "10th",
+      field: "Board of Secondary Education, Rajasthan",
+      year: "2015-2016",
+      status: "Completed",
+    }]
   },
   about: `I am a Full-Stack developer based in Ahmedabad, India. I am undergraduate from Jodhpur Institute Of Engineering & Technology.
   Currently working at Techuz Infoweb PVT LTD. I am very passionate about improving my coding skills & developing applications & websites.
