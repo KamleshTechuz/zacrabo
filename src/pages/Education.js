@@ -1,6 +1,4 @@
 import React from "react";
-import collegeImg from '../assets/images/educat/college1.png';
-import schoolImg from '../assets/images/educat/school1.jpeg';
 import { PERSON } from "../profile.data";
 
 export const Education = () => {
@@ -18,11 +16,7 @@ export const Education = () => {
       <div className="box-container">
         <div className="box">
           <div className="image">
-            <img style={{minWidth: '100px'}}
-              draggable="false"
-              src={collegeImg}
-              alt=""
-            />
+          <img style={{minWidth: '100px'}} draggable="false" src={PERSON.education.college.image} alt="" />
           </div>
           <div className="content">
             <h3>{PERSON.education.college.degree} in {PERSON.education.college.field}</h3>
@@ -33,9 +27,9 @@ export const Education = () => {
           {
             PERSON.education.school.map((sch) => {
               return (
-                <div className="box">
+                <div className="box" key={sch.year}>
                   <div className="image">
-                    <img draggable="false" src={schoolImg} alt=""/>
+                    <img draggable="false" src={sch.image} alt=""/>
                   </div>
                   <div className="content">
                     <h3>{sch.degree} | {sch.field}</h3>
