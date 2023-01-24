@@ -1,3 +1,10 @@
+// profile image
+import profileImg from './assets/images/profile3.jpg'
+
+// school collge images
+import collegeImg from './assets/images/educat/college1.png';
+import schoolImg from './assets/images/educat/school1.jpeg';
+
 // images for projects
 import tutorac from './assets/images/projects/tutorac.png'
 import getlitt from './assets/images/projects/getlitt.png'
@@ -10,6 +17,7 @@ export const PERSON = {
   age: 23,
   number: "+91 779-099-7718",
   email: "kamleshmundel18@gmail.com",
+  image: profileImg,
   current_place: {
     city: 'Ahmedabad',
     country: 'India',
@@ -28,6 +36,7 @@ export const PERSON = {
       field: "Electronics & communication Engineering",
       year: "2018-2022",
       status: "Completed",
+      image: collegeImg
     },
     school: [
       {
@@ -36,12 +45,14 @@ export const PERSON = {
       field: "Physics, Chemistry & Maths",
       year: "2016-2017",
       status: "Completed",
+      image: schoolImg
     }, {
       name: "Shree Vageeshwaree Vidhya Mandir",
       degree: "10th",
       field: "Board of Secondary Education, Rajasthan",
       year: "2014-2015",
       status: "Completed",
+      image: schoolImg
     }]
   },
   about: `I am a Full-Stack developer based in Ahmedabad, India. I am undergraduate from Jodhpur Institute Of Engineering & Technology.

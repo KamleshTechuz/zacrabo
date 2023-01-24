@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import emailjs from '@emailjs/browser';
+import Modal from 'react-modal';
 // components
 import { Footer } from "../shared/components/Footer";
 // images
@@ -9,6 +10,7 @@ import contactImg from '../assets/images/contact1.png';
 import { CONSTAINT } from "../shared/services/CONSTAINT.service";
 import { ENV } from "../environment/enviromentt";
 import { checkMsg, checkNumber, emailValidator, onlyChars } from "../shared/services/validators.service";
+import loader from '../assets/images/preloader.gif';
 
 export const Contact = () => {
   const form = useRef();
@@ -17,6 +19,7 @@ export const Contact = () => {
   const initFormData = {name: '', email: '', num: '', msg: ''}
   const [formData, setFormData] = useState(initFormData)
   const [errData, setErrData] = useState(initFormData)
+  const [showLoader, setShowLoader] = useState(false)
 
   const handleChange = ({target : { name, value}}) => setFormData((pre) => ({...pre, [name]: value}))
 
@@ -29,25 +32,31 @@ export const Contact = () => {
 
     let errCount = 0;
     Object.keys(errors).map((e) => errCount += (errors[e] ? 1 : 0) )
+    if(errCount) setShowLoader(false)
     return errCount ? true : false;
   }
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setShowLoader(true)
     const status = checkError(formData)
     if(status) return false;
 
     emailjs.sendForm(ENV.SERVICE_ID, ENV.TEMPLATE_ID, form.current, ENV.PUBLIC_KEY)
       .then(() => {
-          navigate(CONSTAINT.navigateToHome)
+        setShowLoader(false);
+        navigate(CONSTAINT.navigateToHome)
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
+        setShowLoader(false);
       });
   };
 
     return (
       <div>
+              <Modal isOpen={showLoader} onRequestClose={() => setIsOpen(false)} contentLabel="Example Modal" className="model">
+                <img className="model-img" draggable="false" src={loader} alt=""/>
+              </Modal>
         <section className="contact" id="contact">
           <h2 className="heading"><i className="fas fa-headset"></i> Get in <span>Touch</span></h2>
           <div className="container">
