@@ -1301,3 +1301,11 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+
+/* form validation */
+
+.form-group .form-error {
+  color: red;
+  margin-left: 15px;
+}
