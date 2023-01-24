@@ -40,7 +40,7 @@ export const PERSON = {
       name: "Shree Vageeshwaree Vidhya Mandir",
       degree: "10th",
       field: "Board of Secondary Education, Rajasthan",
-      year: "2015-2016",
+      year: "2014-2015",
       status: "Completed",
     }]
   },
