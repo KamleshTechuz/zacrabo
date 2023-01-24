@@ -36,9 +36,9 @@ export const Footer = () => {
 
       <div className="box">
           <h3>contact info</h3>
-          <p> <i className="fas fa-phone"></i>+91 779-099-7718</p>
-          <p> <i className="fas fa-envelope"></i>kamlesh@techuz.com</p>
-          <p> <i className="fas fa-map-marked-alt"></i>Gujarat, India-380060</p>
+          <p> <i className="fas fa-phone"></i>{PERSON.number}</p>
+          <p> <i className="fas fa-envelope"></i>{PERSON.email}</p>
+          <p> <i className="fas fa-map-marked-alt"></i>{PERSON.current_place.city}, {PERSON.current_place.country} - {PERSON.current_place.pincode}</p>
           <div className="share">
         {
             socialData.map((data) => {
