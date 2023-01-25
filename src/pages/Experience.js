@@ -1,9 +1,11 @@
 import React from "react";
+import { WaveSVG } from "../background/WaveSVG";
 import { PERSON } from "../profile.data";
 
 export const Experience = () => {
   return (
     <section className="experience" id="experience">
+      <WaveSVG />
       <h2 className="heading">
         <i className="fas fa-briefcase"></i> Experience
       </h2>

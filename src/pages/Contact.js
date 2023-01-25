@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 // components
 import { Footer } from "../shared/components/Footer";
 // images
-import contactImg from '../assets/images/contact1.png';
+import contactImg from '../assets/images/contact.png';
 // variables
 import { CONSTAINT } from "../shared/services/CONSTAINT.service";
 import { ENV } from "../environment/enviromentt";
