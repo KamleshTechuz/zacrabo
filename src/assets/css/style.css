@@ -180,6 +180,9 @@ header .navbar ul li a:hover {
 
 /* hero section starts*/
 .home {
+  background-image: url("../images/backgroung1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -348,6 +351,9 @@ header .navbar ul li a:hover {
 .about {
   padding-top: 15rem;
   background: rgb(255, 255, 255);
+  /* background-image: url("../images/backgroung1.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 .about .row {
   display: flex;
