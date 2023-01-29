@@ -351,9 +351,9 @@ header .navbar ul li a:hover {
 .about {
   padding-top: 15rem;
   background: rgb(255, 255, 255);
-  /* background-image: url("../images/backgroung1.png");
+  background-image: url("../images/background2.jpg");
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 .about .row {
   display: flex;
@@ -372,7 +372,7 @@ header .navbar ul li a:hover {
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
   transition: 0.3s;
   cursor: pointer;
 }
@@ -399,6 +399,7 @@ header .navbar ul li a:hover {
   font-family: "Nunito";
   font-weight: 600;
   text-transform: none;
+  color: rgb(59, 57, 57);
 }
 .about .row .content .box-container {
   display: flex;
@@ -411,7 +412,8 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 .about .row .content .box-container .box p span {
-  color: #011aff;
+  color: black;
+  font-size: 16px;
 }
 .resumebtn {
   margin-top: 6rem;
@@ -542,7 +544,10 @@ header .navbar ul li a:hover {
 
 /* education section starts */
 .education {
-  background: #e5ecfb;
+  /* background: #e5ecfb; */
+  background-image: url("../images/background3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 13rem;
   min-height: 100vh;
 }
