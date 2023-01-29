@@ -47,8 +47,8 @@ export const Projects = () => {
                 <div className="desc">
                   <p>{project.desc}</p>
                   <div className="btns">
-                    <a href={project.links.view} className="btn" target="_blank"><i className="fas fa-eye"></i>View</a>
-                    <a href={project.links.code} className="btn" target="_blank">Code <i className="fas fa-code"></i></a>
+                    {project.links.view && <a href={project.links.view} className="btn" target="_blank"><i className="fas fa-eye"></i>View</a>}
+                    {project.links.code && <a href={project.links.code} className="btn" target="_blank">Code <i className="fas fa-code"></i></a>}
                   </div>
                 </div>
               </div>

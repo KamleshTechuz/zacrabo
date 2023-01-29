@@ -21,8 +21,8 @@ export const Work = () => {
           <div className="desc">
             <p>{pro.desc}</p>
             <div className="btns">
-              <a href={pro.links.view} className="btn" target="_blank"><i className="fas fa-eye"></i> View</a>
-              <a href={pro.links.code} className="btn" target="_blank">Code <i className="fas fa-code"></i></a>
+              {pro.links.view && <a href={pro.links.view} className="btn" target="_blank"><i className="fas fa-eye"></i> View</a>}
+              {pro.links.code && <a href={pro.links.code} className="btn" target="_blank">Code <i className="fas fa-code"></i></a>}
             </div>
           </div>
         </div>

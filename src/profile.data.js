@@ -1,15 +1,15 @@
 // profile image
-import profileImg from './assets/images/profile3.jpg'
+import profileImg from './assets/images/profile.jpg'
 
 // school collge images
 import collegeImg from './assets/images/educat/college1.png';
 import schoolImg from './assets/images/educat/school1.jpg';
 
 // images for projects
-import tutorac from './assets/images/projects/tutorac.png'
-import getlitt from './assets/images/projects/getlitt.png'
-import employee from './assets/images/projects/employee.png'
-import portfolio from './assets/images/projects/portfolio1.PNG'
+import tutorac from './assets/images/projects/tutorac.jpg'
+import getlitt from './assets/images/projects/getlitt.jpg'
+import employee from './assets/images/projects/employee.jpg'
+import portfolio from './assets/images/projects/portfolio.jpg'
 
 export const PERSON = {
   first_name: "Kamlesh",
