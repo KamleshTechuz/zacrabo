@@ -3,7 +3,7 @@ import profileImg from './assets/images/profile3.jpg'
 
 // school collge images
 import collegeImg from './assets/images/educat/college1.png';
-import schoolImg from './assets/images/educat/school1.jpeg';
+import schoolImg from './assets/images/educat/school1.jpg';
 
 // images for projects
 import tutorac from './assets/images/projects/tutorac.png'
