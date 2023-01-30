@@ -413,7 +413,7 @@ header .navbar ul li a:hover {
 }
 .about .row .content .box-container .box p span {
   color: black;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 .resumebtn {
   margin-top: 6rem;
@@ -745,7 +745,7 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
   gap:1rem;
   margin: 2rem auto;
-  width: 50%;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }

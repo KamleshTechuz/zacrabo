@@ -5,10 +5,10 @@ import { PERSON } from "../profile.data";
 export const Projects = () => {
   const initCates = [
     { id: 0, checked: true, name: "All Projects" },
-    { id: 2, checked: false, name: "MERN Stack" },
-    { id: 1, checked: false, name: "MARN Stack" },
-    // { id: 3, checked: false, name: "Basic Web" },
-    // { id: 4, checked: false, name: "Android App" },
+    { id: 1, checked: false, name: "ReactJs" },
+    { id: 3, checked: false, name: "Angular" },
+    { id: 2, checked: false, name: "NextJs" },
+    { id: 4, checked: false, name: "NodeJs" },
   ];
   const [projects, setProjects] = useState(PERSON.projects);
   const [categories, setCategories] = useState(initCates);
@@ -20,7 +20,7 @@ export const Projects = () => {
         return c;
       });
     });
-    const filteredPro = PERSON.projects.filter((p) => p.category === category);
+    const filteredPro = PERSON.projects.filter((p) => p.category.includes(category));
     setProjects(category ? filteredPro : PERSON.projects);
   };
 

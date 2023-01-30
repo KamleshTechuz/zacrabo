@@ -9,7 +9,7 @@ export const Work = () => {
   <h2 className="heading"><i className="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
 
 {
-  PERSON.projects.slice(0, 2).map((pro) => {
+  PERSON.projects.slice(0, 3).map((pro) => {
     return (
     <div className="box-container" key={pro.name}>
       <div className="box tilt">

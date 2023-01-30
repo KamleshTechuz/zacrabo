@@ -10,6 +10,7 @@ import tutorac from './assets/images/projects/tutorac.jpg'
 import getlitt from './assets/images/projects/getlitt.jpg'
 import employee from './assets/images/projects/employee.jpg'
 import portfolio from './assets/images/projects/portfolio.jpg'
+import qkart from './assets/images/projects/qkart.jpg'
 
 export const PERSON = {
   first_name: "Kamlesh",
@@ -129,7 +130,7 @@ export const PERSON = {
       rendering 4k video lessons, integrated quizzes and resources, live exam prep tests, and a student-teacher
       doubt clarification module.`,
       image: tutorac,
-      category: 1, // MEAN
+      category: [3, 4], // ANGULAR + NODE
       links: {
         view: "https://tutorac.com/",
         code: ""
@@ -139,7 +140,7 @@ export const PERSON = {
       name: "Portfolio web site",
       desc: "Modern resume pattern using react | content about person like education, skills, experience and etc.",
       image: portfolio,
-      category: 2, // MERN
+      category: [1], // REACT
       links: {
         view: "https://kamlesh-mundel.netlify.com/",
         code: "https://github.com/KamleshTechuz/zacrabo"
@@ -154,7 +155,7 @@ export const PERSON = {
       national and international-level reading olympiad for kids. Recently, it was also selected for a startup
       accelerator funding program.`,
       image: getlitt,
-      category: 1, // MEAN
+      category: [3, 4], // ANGULAR + NODE
       links: {
         view: "http://www.getlitt.co/",
         code: ""
@@ -166,10 +167,22 @@ export const PERSON = {
       activity, performance and declares the best performer of the month, employee of the month, emerging
       employee of the month and best leader.`,
       image: employee,
-      category: 1, // MARN
+      category: [3, 4], // ANGULAR + NODE
       links: {
         view: "",
         code: ""
+      }
+    },
+    {
+      name: "Q-Kart",
+      desc: `Q-Kart is an E-Commerce wesite on which a lot of electronics gadgets are available at very low cost.
+      It delivers dreams to the doors. Here it has seasonal sale to let the people enjoy the festivals and joyful.
+      NextJs is used to develop Q-Kart and Sanity-Studeio is used as data storage and manager. Stripe is use as payment gateway.`,
+      image: qkart,
+      category: [2], // NEXTJS
+      links: {
+        view: "https://qkart.vercel.app/",
+        code: "https://github.com/myqkart/qkart"
       }
     },
   ]
