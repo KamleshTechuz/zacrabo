@@ -1,16 +1,16 @@
 // profile image
-import profileImg from './assets/images/profile.jpg'
+import profileImg from './assets/images/profile.JPEG'
 
 // school collge images
-import collegeImg from './assets/images/educat/college1.png';
-import schoolImg from './assets/images/educat/school1.jpg';
+import collegeImg from './assets/images/educat/college1.JPEG';
+import schoolImg from './assets/images/educat/school1.JPEG';
 
 // images for projects
-import tutorac from './assets/images/projects/tutorac.jpg'
-import getlitt from './assets/images/projects/getlitt.jpg'
-import employee from './assets/images/projects/employee.jpg'
-import portfolio from './assets/images/projects/portfolio.jpg'
-import qkart from './assets/images/projects/qkart.jpg'
+import tutorac from './assets/images/projects/tutorac.JPEG'
+import getlitt from './assets/images/projects/getlitt.JPEG'
+import employee from './assets/images/projects/employee.JPEG'
+import portfolio from './assets/images/projects/portfolio.JPEG'
+import qkart from './assets/images/projects/qkart.JPEG'
 
 export const PERSON = {
   first_name: "Kamlesh",
@@ -31,14 +31,16 @@ export const PERSON = {
     facebook: 'https://www.facebook.com/kamlesh.mundel.79/',
   },
   education: {
-    college: {
-      name: "Jodhpur Institute Of Engineering & Technology",
-      degree: "Bachelor Of Technology",
-      field: "Electronics & communication Engineering",
-      year: "2018-2022",
-      status: "Completed",
-      image: collegeImg
-    },
+    college: [
+      {
+        name: "Jodhpur Institute Of Engineering & Technology",
+        degree: "Bachelor Of Technology",
+        field: "Electronics & communication Engineering",
+        year: "2018-2022",
+        status: "Completed",
+        image: collegeImg
+      }
+    ],
     school: [
       {
       name: "Shree Vageeshwaree Vidhya Mandir",
