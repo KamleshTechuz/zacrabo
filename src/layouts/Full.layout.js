@@ -4,9 +4,9 @@ import { Navbar } from "../shared/components/Navbar";
 
 export const FullLayout = () => {
   return (
-    <div>
+    <React.Fragment>
       <Navbar />
       <Outlet />
-    </div>
+    </React.Fragment>
   );
 };

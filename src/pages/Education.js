@@ -1,7 +1,35 @@
 import React from "react";
-import collegeImg from '../assets/images/educat/college1.png';
-import schoolImg from '../assets/images/educat/school1.jpeg';
 import { PERSON } from "../profile.data";
+
+const SchList = ({sch}) => {
+  return (
+    <div className="box">
+      <div className="image">
+        <img draggable="false" src={sch.image} alt=""/>
+      </div>
+      <div className="content">
+        <h3>{sch.degree} | {sch.field}</h3>
+        <p>{sch.name} | RBSE</p>
+        <h4>{sch.year} | {sch.status}</h4>
+      </div>
+    </div>
+  )
+}
+
+const ClgList = ({clg}) => {
+  return (
+    <div className="box">
+    <div className="image">
+    <img style={{minWidth: '100px'}} draggable="false" src={clg.image} alt="" />
+    </div>
+    <div className="content">
+      <h3>{clg.degree} in {clg.field}</h3>
+      <p>{clg.name}</p>
+      <h4>{clg.year} | {clg.status}</h4>
+    </div>
+  </div>
+  )
+}
 
 export const Education = () => {
   return (
@@ -16,35 +44,8 @@ export const Education = () => {
       </p>
 
       <div className="box-container">
-        <div className="box">
-          <div className="image">
-            <img style={{minWidth: '100px'}}
-              draggable="false"
-              src={collegeImg}
-              alt=""
-            />
-          </div>
-          <div className="content">
-            <h3>{PERSON.education.college.degree} in {PERSON.education.college.field}</h3>
-            <p>{PERSON.education.college.name}</p>
-            <h4>{PERSON.education.college.year} | {PERSON.education.college.status}</h4>
-          </div>
-        </div>
-
-        <div className="box">
-          <div className="image">
-            <img
-              draggable="false"
-              src={schoolImg}
-              alt=""
-            />
-          </div>
-          <div className="content">
-            <h3>{PERSON.education.school.degree} | {PERSON.education.school.field}</h3>
-            <p>{PERSON.education.school.name} | RBSE</p>
-            <h4>{PERSON.education.school.year} | {PERSON.education.school.status}</h4>
-          </div>
-        </div>
+        { PERSON.education.college.map((clg, i) => <ClgList clg={clg} key={i}/>) }
+        { PERSON.education.school.map((sch, i) => <SchList sch={sch} key={i}/>) }
       </div>
     </section>
   );

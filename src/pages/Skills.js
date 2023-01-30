@@ -1,6 +1,17 @@
 import React from "react";
 import { PERSON } from "../profile.data";
 
+const SkillList = ({skill}) => {
+  return (
+    <div className="bar">
+      <div className="info">
+        <img src={skill.icon} alt=""/>
+        <span>{skill.name}</span>
+      </div>
+    </div>
+  )
+}
+
 export const Skills = () => {
   return (
     <section className="skills" id="skills">
@@ -10,16 +21,7 @@ export const Skills = () => {
 
       <div className="container">
         <div className="row" id="skillsContainer">
-          {PERSON.skills.map((data) => {
-            return (
-              <div className="bar" key={data.name}>
-                <div className="info">
-                  <img src={data.icon} alt=""/>
-                  <span>{data.name}</span>
-                </div>
-              </div>
-            );
-          })}
+          {PERSON.skills.map((data) => <SkillList skill ={data} key={data.name}/>)}
         </div>
       </div>
     </section>

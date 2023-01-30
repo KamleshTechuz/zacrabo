@@ -1,5 +1,5 @@
 import React from "react";
-import profileImg from '../assets/images/profile3.jpg'
+
 import { PERSON } from "../profile.data";
 import resume from '../assets/files/resume.pdf';
 
@@ -11,7 +11,7 @@ export const About = () => {
     <div className="row">
 
     <div className="image">
-        <img draggable="false" className="tilt" src={profileImg} alt="" />
+        <img draggable="false" className="tilt" src={PERSON.image} alt="" />
     </div>
     <div className="content">
         <h3>I'm {PERSON.first_name} {PERSON.last_name}</h3>

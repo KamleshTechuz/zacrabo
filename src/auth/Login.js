@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 
 
 // images
-import loginImg from '../assets/images/img-01.png';
+import loginImg from '../assets/images/img-01.JPEG';
 
 export const Login = () => {
 
