@@ -2,6 +2,22 @@ import React from "react";
 import { WaveSVG } from "../background/WaveSVG";
 import { PERSON } from "../profile.data";
 
+const ExpList = ({data, i}) => {
+  return (
+    <div className={`container ${ (i%2) ? 'left' : 'right'}`}>
+      <div className="content">
+        <div className="tag">
+          <h2>{data.company_name}</h2>
+        </div>
+        <div className="desc">
+          <h3>{data.role}</h3>
+          <p>{data.join_from} - {data.till}</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export const Experience = () => {
   return (
     <section className="experience" id="experience">
@@ -17,21 +33,7 @@ export const Experience = () => {
       </div>
 
       <div className="timeline">
-        {PERSON.experience.map((data, i) => {
-          return (
-            <div className={`container ${ (i%2) ? 'left' : 'right'}`} key={i}>
-              <div className="content">
-                <div className="tag">
-                  <h2>{PERSON.experience[i].company_name}</h2>
-                </div>
-                <div className="desc">
-                  <h3>{PERSON.experience[i].role}</h3>
-                  <p>{PERSON.experience[i].join_from} - {PERSON.experience[i].till}</p>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+        {PERSON.experience.map((data, i) => <ExpList data={data} i={i} key={i}/> )}
       </div>
 
       <div className="morebtn">
