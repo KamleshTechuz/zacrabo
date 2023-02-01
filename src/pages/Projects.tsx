@@ -24,8 +24,8 @@ const ProjectList = ({project}: {project: Project}) => {
           <div className="desc">
             <p>{project.desc}</p>
             <div className="btns">
-              {project.links.view && <a href={project.links.view} className="btn" target="_blank"><i className="fas fa-eye"></i>View</a>}
-              {project.links.code && <a href={project.links.code} className="btn" target="_blank">Code <i className="fas fa-code"></i></a>}
+              {project.links.view && <Link to={project.links.view} className="btn" target="_blank" rel="noreferrer"><i className="fas fa-eye"></i>View</Link>}
+              {project.links.code && <Link to={project.links.code} className="btn" target="_blank" rel="noreferrer">Code <i className="fas fa-code"></i></Link>}
             </div>
           </div>
         </div>

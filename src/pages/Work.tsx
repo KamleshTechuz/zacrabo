@@ -12,8 +12,8 @@ const WorkList = ({pro}: {pro: Project}) => {
           <div className="desc">
             <p>{pro.desc}</p>
             <div className="btns">
-              {pro.links.view && <a href={pro.links.view} className="btn" target="_blank"><i className="fas fa-eye"></i> View</a>}
-              {pro.links.code && <a href={pro.links.code} className="btn" target="_blank">Code <i className="fas fa-code"></i></a>}
+              {pro.links.view && <Link to={pro.links.view} className="btn" target="_blank" rel="noreferrer"><i className="fas fa-eye"></i> View</Link>}
+              {pro.links.code && <a href={pro.links.code} className="btn" target="_blank" rel="noreferrer">Code <i className="fas fa-code"></i></a>}
             </div>
           </div>
         </div>

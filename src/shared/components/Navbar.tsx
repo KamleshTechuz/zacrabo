@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { NavData } from "../interfaces";
 import { CONSTAINT } from "../services/CONSTAINT.service";
 
@@ -12,7 +12,6 @@ const navData: Array<NavData> = [
 const NavLinks = ({data, toggleClass}: {data: NavData; toggleClass: any}) => <li><NavLink to={data.url} onClick={toggleClass}>{data.name}</NavLink></li>;
 
 export const Navbar = () => {
-  const navigate = useNavigate();
   const [isActive, setActive] = useState(false);
 
   const toggleClass = () => setActive(!isActive);
