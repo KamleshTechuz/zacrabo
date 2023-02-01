@@ -19,7 +19,7 @@ const quickLinks: Array<QckLink> = [
 ];
 
 const QuickLink = ({data}: {data: QckLink}) => <Link to={data.to}><i className="fas fa-chevron-circle-right"></i> {data.name}</Link>;
-const SocialLinks = ({data}: {data: SocialData}) => <a href={data.url} className={data.icon} aria-label={data.label} target="_blank" rel="noreferrer" />;
+const SocialLinks = ({data}: {data: SocialData}) => <a href={data.url} className={data.class} aria-label={data.label} target="_blank" rel="noreferrer"><i className={data.icon}></i></a>;
 
 export const Footer = () => {
     return (
