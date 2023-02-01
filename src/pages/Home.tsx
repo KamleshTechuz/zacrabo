@@ -17,7 +17,7 @@ const socialData: Array<SocialData> = [
 const SocialList = ({data}:{data: SocialData}) => {
   return (
     <li>
-      <a className={data.class} aria-label={data.label} href={data.url} target="_blank">
+      <a className={data.class} aria-label={data.label} href={data.url} target="_blank" rel="noreferrer">
         <i className={data.icon}></i>
       </a>
     </li>
