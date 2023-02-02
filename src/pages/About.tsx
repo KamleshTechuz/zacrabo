@@ -14,10 +14,10 @@ export const About = () => {
                     <span className="tag">{PERSON.current_role}</span>            
                     <p>{PERSON.about}</p>
                     <div className="box-container">
-                        <div className="box">
+                        {/* <div className="box">
                             <p><span> age: </span> {PERSON.age}</p>
                             <p><span> phone : </span> {PERSON.number}</p>
-                        </div>
+                        </div> */}
                         <div className="box">
                             <p><span> email : </span> {PERSON.email}</p>
                             <p><span> place : </span> {PERSON.current_place.city}, {PERSON.current_place.country} - {PERSON.current_place.pincode}</p>
