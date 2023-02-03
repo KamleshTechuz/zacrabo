@@ -6,7 +6,10 @@ const WorkList = ({pro}: {pro: Project}) => {
   return (
     <div className="box-container" key={pro.name}>
       <div className="box tilt">
-        <img draggable="false" src={pro.image} alt="" />
+      <picture>
+        <source media="(min-width:768px)" srcSet={pro.image} />
+        <img draggable="false" src={pro.res_img} alt="" />
+      </picture>
         <div className="content">
           <div className="tag"><h3>{pro.name}</h3></div>
           <div className="desc">

@@ -32,6 +32,7 @@ export interface Project {
     name: string;
     desc: string;
     image: any;
+    res_img: any;
     category: Array<number>;
     links: {
       view: string;

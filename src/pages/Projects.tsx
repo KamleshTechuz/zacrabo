@@ -18,7 +18,10 @@ const ProjectList = ({project}: {project: Project}) => {
   return (
     <div className="box-container" >
       <div className="box tilt">
-        <img src={project.image} alt=""/>
+      <picture>
+        <source media="(min-width:768px)" srcSet={project.image} />
+        <img draggable="false" src={project.res_img} alt="" />
+      </picture>
         <div className="content">
           <div className="tag"><h3>{project.name}</h3></div>
           <div className="desc">

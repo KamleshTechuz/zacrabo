@@ -7,10 +7,15 @@ import schoolImg from './assets/images/educat/school1.JPEG';
 
 // images for projects
 import tutorac from './assets/images/projects/tutorac.JPEG'
+import tutorac_res from './assets/images/projects/tutorac_res.JPEG'
 import getlitt from './assets/images/projects/getlitt.JPEG'
+import getlitt_res from './assets/images/projects/getlitt_res.JPEG'
 import employee from './assets/images/projects/employee.JPEG'
+import emp_res from './assets/images/projects/emp_res.JPEG'
 import portfolio from './assets/images/projects/portfolio.JPEG'
+import portfolio_res from './assets/images/projects/portfolio_res.JPEG'
 import qkart from './assets/images/projects/qkart.JPEG'
+import qkart_res from './assets/images/projects/qkart_res.JPEG'
 
 export const PERSON = {
   first_name: "Kamlesh",
@@ -132,6 +137,7 @@ export const PERSON = {
       rendering 4k video lessons, integrated quizzes and resources, live exam prep tests, and a student-teacher
       doubt clarification module.`,
       image: tutorac,
+      res_img: tutorac_res,
       category: [3, 4], // ANGULAR + NODE
       links: {
         view: "https://tutorac.com/",
@@ -142,6 +148,7 @@ export const PERSON = {
       name: "Portfolio web site",
       desc: "Modern resume pattern using react | content about person like education, skills, experience and etc.",
       image: portfolio,
+      res_img: portfolio_res,
       category: [1], // REACT
       links: {
         view: "https://kamlesh-mundel.netlify.com/",
@@ -157,6 +164,7 @@ export const PERSON = {
       national and international-level reading olympiad for kids. Recently, it was also selected for a startup
       accelerator funding program.`,
       image: getlitt,
+      res_img: getlitt_res,
       category: [3, 4], // ANGULAR + NODE
       links: {
         view: "http://www.getlitt.co/",
@@ -169,6 +177,7 @@ export const PERSON = {
       activity, performance and declares the best performer of the month, employee of the month, emerging
       employee of the month and best leader.`,
       image: employee,
+      res_img: emp_res,
       category: [3, 4], // ANGULAR + NODE
       links: {
         view: "",
@@ -181,6 +190,7 @@ export const PERSON = {
       It delivers dreams to the doors. Here it has seasonal sale to let the people enjoy the festivals and joyful.
       NextJs is used to develop Q-Kart and Sanity-Studeio is used as data storage and manager. Stripe is use as payment gateway.`,
       image: qkart,
+      res_img: qkart_res,
       category: [2], // NEXTJS
       links: {
         view: "https://qkart.vercel.app/",
