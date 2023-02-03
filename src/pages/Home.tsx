@@ -30,7 +30,7 @@ export const Home = () => {
       <div id="particles-js"></div>
       <div className="content">
         <h2>Hi There,<br /> I'm {PERSON.first_name} <span>{PERSON.last_name}</span></h2>
-        <p>i am into <span className="typing-text">Web Development</span></p>
+        <p>I am into <span className="typing-text">Web Development</span></p>
         <Link to={CONSTAINT.navigateToAbout} className="btn">
           <span>About Me</span>
           <i className="fas fa-arrow-circle-right"></i>

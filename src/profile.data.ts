@@ -35,7 +35,7 @@ export const PERSON = {
       {
         name: "Jodhpur Institute Of Engineering & Technology",
         degree: "Bachelor Of Technology",
-        field: "Electronics & communication Engineering",
+        field: "Electronics & Communication Engineering",
         year: "2018-2022",
         status: "Completed",
         image: collegeImg

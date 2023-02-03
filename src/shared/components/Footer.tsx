@@ -30,11 +30,11 @@ export const Footer = () => {
                     <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
                 </div>
                 <div className="box">
-                    <h3>quick links</h3>
+                    <h3>Quick links</h3>
                     { quickLinks.map((data, i) => <QuickLink data={data} key={i}/>) }
                 </div>
                 <div className="box">
-                    <h3>contact info</h3>
+                    <h3>Contact info</h3>
                     {/* <p> <i className="fas fa-phone"></i>{PERSON.number}</p> */}
                     <p> <i className="fas fa-envelope"></i>{PERSON.email}</p>
                     <p> <i className="fas fa-map-marked-alt"></i>{PERSON.current_place.city}, {PERSON.current_place.country} - {PERSON.current_place.pincode}</p>

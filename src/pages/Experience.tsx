@@ -27,7 +27,7 @@ export const Experience = () => {
       </h2>
       <div className="quote">
         <span>
-          every experience in your life is being orchestrated to teach you
+          Every experience in your life is being orchestrated to teach you
           something you need to know to move forward.
         </span>
       </div>

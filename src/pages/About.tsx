@@ -19,8 +19,8 @@ export const About = () => {
                             <p><span> phone : </span> {PERSON.number}</p>
                         </div> */}
                         <div className="box">
-                            <p><span> email : </span> {PERSON.email}</p>
-                            <p><span> place : </span> {PERSON.current_place.city}, {PERSON.current_place.country} - {PERSON.current_place.pincode}</p>
+                            <p><span> Email : </span> {PERSON.email}</p>
+                            <p><span> Place : </span> {PERSON.current_place.city}, {PERSON.current_place.country} - {PERSON.current_place.pincode}</p>
                         </div>
                     </div>
                     <div className="resumebtn">
