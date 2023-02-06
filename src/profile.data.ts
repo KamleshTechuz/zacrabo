@@ -5,6 +5,23 @@ import profileImg from './assets/images/profile.JPEG'
 import collegeImg from './assets/images/educat/college1.JPEG';
 import schoolImg from './assets/images/educat/school1.JPEG';
 
+// skill icons
+import react from "./assets/images/icons/react.png";
+import express from "./assets/images/icons/node.png";
+import node from "./assets/images/icons/nodejs.png";
+import redux from "./assets/images/icons/redux.png";
+import bootstrap from "./assets/images/icons/bootstrap.png";
+import html from "./assets/images/icons/html-5.png";
+import css from "./assets/images/icons/css3.png";
+import javaScript from "./assets/images/icons/javascript.png";
+import python from "./assets/images/icons/python.png";
+import cPlus from "./assets/images/icons/c++.png";
+import mongoDb from "./assets/images/icons/mongodb.png";
+import mySql from "./assets/images/icons/mysql.png";
+import postgres from "./assets/images/icons/postgresql.png";
+import aws from "./assets/images/icons/aws.png";
+import gitHub from "./assets/images/icons/github.png";
+
 // images for projects
 import tutorac from './assets/images/projects/tutorac.JPEG'
 import tutorac_res from './assets/images/projects/tutorac_res.JPEG'
@@ -68,52 +85,11 @@ export const PERSON = {
   I build WebApps and Websites using MERN & MARN Stack. Love to build Full-Stack EdTech, portfolios, E-commerce websites and clones.`,
   current_role: 'Full Stack Developer',
   skills: [
-    {
-      name: "ReactJS",
-      icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png",
-    }, {
-      name: "ExpressJS",
-      icon: "https://img.icons8.com/fluency/48/000000/node-js.png",
-    }, {
-      name: "NodeJS",
-      icon: "https://img.icons8.com/color/48/000000/nodejs.png",
-    }, {
-      name: "Redux",
-      icon: "https://img.icons8.com/color/48/000000/redux.png",
-    }, {
-      name: "Bootstrap",
-      icon: "https://img.icons8.com/color/48/000000/bootstrap.png",
-    }, {
-      name: "HTML5",
-      icon: "https://img.icons8.com/color/48/000000/html-5--v1.png",
-    }, {
-      name: "CSS3",
-      icon: "https://img.icons8.com/color/48/000000/css3.png",
-    }, {
-      name: "JavaScript",
-      icon: "https://img.icons8.com/color/48/000000/javascript--v1.png",
-    }, {
-      name: "Python",
-      icon: "https://img.icons8.com/color/48/000000/python--v1.png",
-    }, {
-      name: "C++",
-      icon: "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png",
-    }, {
-      name: "MongoDB",
-      icon: "https://img.icons8.com/color/48/000000/mongodb.png",
-    }, {
-      name: "MySQL",
-      icon: "https://img.icons8.com/color/48/000000/mysql-logo.png",
-    }, {
-      name: "PostgreSQL",
-      icon: "https://img.icons8.com/color/48/000000/postgreesql.png",
-    }, {
-      name: "AWS",
-      icon: "https://img.icons8.com/color/48/000000/amazon-web-services.png",
-    }, {
-      name: "GitHub",
-      icon: "https://img.icons8.com/glyph-neue/48/ffffff/github.png",
-    },
+    { name: "ReactJS", icon: react }, { name: "ExpressJS", icon: express }, { name: "NodeJS", icon: node },
+    { name: "Redux",icon: redux }, { name: "Bootstrap", icon: bootstrap }, { name: "HTML5", icon: html },
+    { name: "CSS3", icon: css }, { name: "JavaScript", icon: javaScript }, { name: "Python", icon: python},
+    { name: "C++", icon: cPlus }, { name: "MongoDB", icon: mongoDb }, { name: "MySQL", icon: mySql },
+    { name: "PostgreSQL", icon: postgres }, { name: "AWS", icon: aws }, { name: "GitHub", icon: gitHub }
   ],
   experience : [
     {
