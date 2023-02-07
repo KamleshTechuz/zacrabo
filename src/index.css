@@ -715,13 +715,13 @@ header .navbar ul li a:hover {
   font-size: 2rem;
 }
 .work .box-container .box:hover .content {
-  top: 25%;
+  top: 0%;
 }
 .work .desc {
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 2rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
   overflow-y: auto;
 }
 .work .desc p {
