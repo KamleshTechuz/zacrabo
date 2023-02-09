@@ -22,6 +22,13 @@ import mySql from "./assets/images/icons/mysql.png";
 import postgres from "./assets/images/icons/postgresql.png";
 import aws from "./assets/images/icons/aws.png";
 import gitHub from "./assets/images/icons/github.png";
+import arduino from "./assets/images/icons/arduino.png";
+import raspberry from "./assets/images/icons/raspberry.png";
+import selenium from "./assets/images/icons/selenium.png";
+import matlab from "./assets/images/icons/matlab.png";
+import easyEda from "./assets/images/icons/easyeda.png";
+import dataScience from "./assets/images/icons/dataScience.png";
+import machineLearning from "./assets/images/icons/machineLearning.png";
 
 // images for projects
 import tutorac from './assets/images/projects/tutorac.JPEG'
@@ -86,11 +93,29 @@ export const PERSON = {
   I build WebApps and Websites using MERN & MARN Stack. Love to build Full-Stack EdTech, portfolios, E-commerce websites and clones.`,
   current_role: 'Full Stack Developer',
   skills: [
-    { name: "ReactJS", icon: react }, { name: "Redux",icon: redux }, { name: "Angular",icon: angular },
-    { name: "ExpressJS", icon: express }, { name: "NodeJS", icon: node }, { name: "MongoDB", icon: mongoDb },
-    { name: "PostgreSQL", icon: postgres }, { name: "MySQL", icon: mySql }, { name: "AWS", icon: aws },
-    { name: "JavaScript", icon: javaScript }, { name: "Bootstrap", icon: bootstrap }, { name: "CSS3", icon: css },
-    { name: "HTML5", icon: html }, { name: "Python", icon: python}, { name: "C++", icon: cPlus }, { name: "GitHub", icon: gitHub }
+    { name: "ReactJS", icon: react, certi: '' },
+    { name: "Redux",icon: redux, certi: '' },
+    { name: "Angular",icon: angular, certi: 'https://www.hackerrank.com/certificates/6d2318ce7b8d' },
+    { name: "ExpressJS", icon: express, certi: '' },
+    { name: "NodeJS", icon: node, certi: 'https://www.hackerrank.com/certificates/0c18222ab3ec' },
+    { name: "MongoDB", icon: mongoDb, certi: '' },
+    { name: "PostgreSQL", icon: postgres, certi: '' },
+    { name: "MySQL", icon: mySql, certi: 'https://www.hackerrank.com/certificates/58099e0ee1e8' },
+    { name: "AWS", icon: aws, certi: '' },
+    { name: "JavaScript", icon: javaScript, certi: 'https://www.hackerrank.com/certificates/197d9158743a' },
+    { name: "Bootstrap", icon: bootstrap, certi: '' },
+    { name: "CSS3", icon: css, certi: '' },
+    { name: "HTML5", icon: html, certi: '' },
+    { name: "Python", icon: python, certi: 'https://www.hackerrank.com/certificates/5a925c749fdb' },
+    { name: "C++", icon: cPlus, certi: '' },
+    { name: "GitHub", icon: gitHub, certi: '' },
+    { name: "Arduino", icon: arduino, certi: 'https://drive.google.com/file/d/18Ilva2y7a8V-QPB-b90WhUYAU3iYNz9Z/view?usp=share_link' },
+    { name: "Raspberry Pi", icon: raspberry, certi: '' },
+    { name: "Selenium", icon: selenium, certi: '' },
+    { name: "MATLAB", icon: matlab, certi: '' },
+    { name: "EasyEDA", icon: easyEda, certi: '' },
+    { name: "Data Science", icon: dataScience, certi: '' },
+    { name: "Deep Learning", icon: machineLearning, certi: '' },
   ],
   experience : [
     {

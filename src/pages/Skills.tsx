@@ -1,8 +1,11 @@
 import { PERSON } from "../profile.data";
 
-const SkillList = ({skill}: {skill: {icon: string; name: string;}}) => {
+const SkillList = ({skill}: {skill: {icon: string; name: string; certi: string;}}) => {
+
+  const viewCerti = (url: string) => url ? window.open(url, '_blank') : false;
+
   return (
-    <div className="bar">
+    <div className="bar" onClick={() => viewCerti(skill.certi)} style={{cursor: 'pointer'}}>
       <div className="info">
         <img src={skill.icon} alt=""/>
         <span>{skill.name}</span>
@@ -19,7 +22,7 @@ export const Skills = () => {
       </h2>
       <div className="container">
         <div className="row" id="skillsContainer">
-          {PERSON.skills.map((data) => <SkillList skill ={data} key={data.name}/>)}
+          {PERSON.skills.map((data) => <SkillList skill={data} key={data.name}/>)}
         </div>
       </div>
     </section>
