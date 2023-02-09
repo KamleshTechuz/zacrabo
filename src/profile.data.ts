@@ -6,41 +6,16 @@ import collegeImg from './assets/images/educat/college1.JPEG';
 import schoolImg from './assets/images/educat/school1.JPEG';
 
 // skill icons
-import react from "./assets/images/icons/react.png";
-import angular from "./assets/images/icons/angular.png";
-import express from "./assets/images/icons/node.png";
-import node from "./assets/images/icons/nodejs.png";
-import redux from "./assets/images/icons/redux.png";
-import bootstrap from "./assets/images/icons/bootstrap.png";
-import html from "./assets/images/icons/html-5.png";
-import css from "./assets/images/icons/css3.png";
-import javaScript from "./assets/images/icons/javascript.png";
-import python from "./assets/images/icons/python.png";
-import cPlus from "./assets/images/icons/c++.png";
-import mongoDb from "./assets/images/icons/mongodb.png";
-import mySql from "./assets/images/icons/mysql.png";
-import postgres from "./assets/images/icons/postgresql.png";
-import aws from "./assets/images/icons/aws.png";
-import gitHub from "./assets/images/icons/github.png";
-import arduino from "./assets/images/icons/arduino.png";
-import raspberry from "./assets/images/icons/raspberry.png";
-import selenium from "./assets/images/icons/selenium.png";
-import matlab from "./assets/images/icons/matlab.png";
-import easyEda from "./assets/images/icons/easyeda.png";
-import dataScience from "./assets/images/icons/dataScience.png";
-import machineLearning from "./assets/images/icons/machineLearning.png";
+import {
+  react, angular, express, node, redux, bootstrap, html, css, javaScript, python, cPlus, mongoDb,
+  mySql, postgres, aws, gitHub, arduino, raspberry, selenium, matlab, easyEda, dataScience, machineLearning,
+} from "./shared/data/skills.icons";
 
 // images for projects
-import tutorac from './assets/images/projects/tutorac.JPEG'
-import tutorac_res from './assets/images/projects/tutorac_res.JPEG'
-import getlitt from './assets/images/projects/getlitt.JPEG'
-import getlitt_res from './assets/images/projects/getlitt_res.JPEG'
-import employee from './assets/images/projects/employee.JPEG'
-import emp_res from './assets/images/projects/emp_res.JPEG'
-import portfolio from './assets/images/projects/portfolio.JPEG'
-import portfolio_res from './assets/images/projects/portfolio_res.JPEG'
-import qkart from './assets/images/projects/qkart.JPEG'
-import qkart_res from './assets/images/projects/qkart_res.JPEG'
+import {
+  tutorac, tutorac_res, getlitt, getlitt_res, employee,
+  emp_res, portfolio, portfolio_res, qkart, qkart_res,
+} from "./shared/data/projects.images";
 
 export const PERSON = {
   first_name: "Kamlesh",
