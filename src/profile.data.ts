@@ -7,6 +7,7 @@ import schoolImg from './assets/images/educat/school1.JPEG';
 
 // skill icons
 import react from "./assets/images/icons/react.png";
+import angular from "./assets/images/icons/angular.png";
 import express from "./assets/images/icons/node.png";
 import node from "./assets/images/icons/nodejs.png";
 import redux from "./assets/images/icons/redux.png";
@@ -85,11 +86,11 @@ export const PERSON = {
   I build WebApps and Websites using MERN & MARN Stack. Love to build Full-Stack EdTech, portfolios, E-commerce websites and clones.`,
   current_role: 'Full Stack Developer',
   skills: [
-    { name: "ReactJS", icon: react }, { name: "ExpressJS", icon: express }, { name: "NodeJS", icon: node },
-    { name: "Redux",icon: redux }, { name: "Bootstrap", icon: bootstrap }, { name: "HTML5", icon: html },
-    { name: "CSS3", icon: css }, { name: "JavaScript", icon: javaScript }, { name: "Python", icon: python},
-    { name: "C++", icon: cPlus }, { name: "MongoDB", icon: mongoDb }, { name: "MySQL", icon: mySql },
-    { name: "PostgreSQL", icon: postgres }, { name: "AWS", icon: aws }, { name: "GitHub", icon: gitHub }
+    { name: "ReactJS", icon: react }, { name: "Redux",icon: redux }, { name: "Angular",icon: angular },
+    { name: "ExpressJS", icon: express }, { name: "NodeJS", icon: node }, { name: "MongoDB", icon: mongoDb },
+    { name: "PostgreSQL", icon: postgres }, { name: "MySQL", icon: mySql }, { name: "AWS", icon: aws },
+    { name: "JavaScript", icon: javaScript }, { name: "Bootstrap", icon: bootstrap }, { name: "CSS3", icon: css },
+    { name: "HTML5", icon: html }, { name: "Python", icon: python}, { name: "C++", icon: cPlus }, { name: "GitHub", icon: gitHub }
   ],
   experience : [
     {
